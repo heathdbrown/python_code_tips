@@ -37,3 +37,11 @@ for word in ['red', 'blue', 'red', 'green', 'blue', 'blue']:
 print(cnt)
 Counter({'blue': 3, 'red': 2, 'green': 1})
 ```
+
+5. Merge two dicts together using {**d1, **d2}
+
+https://towardsdatascience.com/merge-dictionaries-in-python-d4e9ce137374
+
+```python
+
+```
