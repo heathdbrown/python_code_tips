@@ -55,3 +55,27 @@ https://towardsdatascience.com/merge-dictionaries-in-python-d4e9ce137374
 ```
 
 11. Simplify if-statements with if x in list
+
+## Random items
+
+Use vars() to enuermtae objects with properties into dictionaries
+
+```python
+class Example:
+
+   def __init__():
+      self._name = None
+      
+   @property
+   def name(self)
+		try :
+			return self._name
+		except Exception as e:
+			raise e
+
+example = Example()
+print(vars(example))
+
+{"_name" : None }
+
+```
