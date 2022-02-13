@@ -293,3 +293,6 @@ python
 
 >>>help(http) # help on specific modules
 ```
+```python
+dir(http) #returns a list of valid attributes for the object passed
+```
