@@ -135,3 +135,18 @@ word_count = len(words)
 print(word_count)
 ```
 **not just for files, can be with databases or anything with managing resources and requiring some type of setup and shutdown.
+4.) Enumerate
+Looping but manually keeping up with the index
+```python
+names = ['Bob', 'Doyle', 'Joe']
+index = 0
+for name in names:
+    print(index, name)
+    index += 1
+```
+Enumerate, keeps up with index automatically
+```python
+names = ['Bob', 'Doyle', 'Joe']
+for index, name in enumerate(names):
+    print(index,name)
+```
