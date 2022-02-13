@@ -83,9 +83,17 @@ print(primes)
 connections = (conn for conn in some_list)
 ```
 
-### 6. Use collections.Counter to count things in objects
+### 6. Define default values in Dictionaries with .get() and .setdefault()
+```python
+my_dict = {"item": "football", "price": 10.00}
+count = my_dict.get("count", 0)
+print(count)
+
+count = my_dict.setdefault("count", 0)
+print(count)
+```
 ### 7. Merge two dicts together using {**d1, **d2}
-### 8. Define default values in Dictionaries with .get() and .setdefault()
+### 8. 
 ### 9. Count hashable objects with collections.Counter
 https://docs.python.org/3/library/collections.html#collections.Counter
 
