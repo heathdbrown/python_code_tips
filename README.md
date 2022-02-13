@@ -47,12 +47,14 @@ connections = [conn for conn in some_list]
 ```
 
 3. Sort complex iterables with sorted()
+
 Simple iterable sorting using list
 ```python
 data = [3,5,1,10,9]
 sorted_data = sorted(data)
 print(sorted_data)
 ```
+
 Complex iterable sorting using dict of list
 ```python
 data = [ {"name": "max", "age" : 6},
