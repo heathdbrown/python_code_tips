@@ -79,3 +79,21 @@ print(vars(example))
 {"_name" : None }
 
 ```
+
+## From 10 Python Tips and Tricks for Writing Better Code
+> https://www.youtube.com/watch?v=C-gEQdGVXbk
+
+1.) Ternary Conditionals
+Instead of the following
+```python
+condtion = True
+if condition:
+   x = 1
+else:
+   x = 0
+```
+You can write this one oneline with Ternary Conditionals
+```python
+condition = True
+x = if condition else 0
+```
