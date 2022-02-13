@@ -67,6 +67,16 @@ print(sorted_data)
 
 ### 4. Store unique values with Sets
 
+```python
+my_list = [1,2,3,4,5,6,7,7,7]
+my_set = set(my_list)
+print(my_list)
+
+primes = {2,3,5,7,11,13,17,19}
+print(primes)
+
+```
+
 ### 5. Save memory with Generators
 ```python
 
