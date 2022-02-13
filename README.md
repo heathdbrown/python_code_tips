@@ -111,3 +111,26 @@ print(f'{total:,}')
 
 10,100,000,000
 ```
+3.) Context Managers
+Bad smell, the code works but you want to use context managers for auto closing
+```python
+f = open('test.txt', 'r')
+
+file_contents = f.read()
+
+f.close()
+
+words = file_contents.split(' ')
+word_count = len(words)
+print(word_count)
+
+```
+Context manager
+```python
+with open('test.txt', 'r') as f:
+   file_contents = f.read()
+   
+words = filel_contents.split(' ')
+word_count = len(words)
+print(word_count)
+```
