@@ -275,5 +275,15 @@ print('Logging in...)
 ```
 
 9.) Python dash m
+What happens with the -m option?
+```python
+# Creating a virtual environment with venv module
+python -m venv .venv
+
+# Start debug server
+python -m smtpd -c DebuggingServer -n localhost:1025
+```
+-m search sys.path for the named module and execute contents like main module
+
 
 10.) Help/Dir
