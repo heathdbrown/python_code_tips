@@ -252,3 +252,28 @@ for key, value in person_info.items():
 for key in person_info.keys():
     print(getattr(person, key))
 ```
+
+8.) Getpass
+Typing in secret values
+
+Wrong way
+```python
+username = input('Username: ')
+password = input('Password: ')
+
+Print('Logging in...)
+```
+
+Better way with getpass
+```python
+from getpass import getpass
+
+username = input('Username: ')
+password = getpass('Password: ')
+
+print('Logging in...)
+```
+
+9.) Python dash m
+
+10.) Help/Dir
