@@ -3,7 +3,7 @@
 ## From 11 python_code_tips
 > https://www.youtube.com/watch?v=8OKTAedgFYg
 
-1. Iterate with enumerate instead or range(len(x))
+### 1. Iterate with enumerate instead or range(len(x))
 
 Bad way
 ```python
@@ -25,7 +25,7 @@ for idx, num in enumerate(data):
 print(data)
 ```
 
-2. Use list comprehension instead of raw for loops
+### 2. Use list comprehension instead of raw for loops
 
 Bad Way; if super short and is not readable
 ```python
@@ -46,7 +46,7 @@ List comprehension example
 connections = [conn for conn in some_list]
 ```
 
-3. Sort complex iterables with sorted()
+### 3. Sort complex iterables with sorted()
 
 Simple iterable sorting using list
 ```python
@@ -64,9 +64,10 @@ data = [ {"name": "max", "age" : 6},
 sorted_data = sorted(data, key=lambda x: x["age"])
 print(sorted_data)
 ```
-data = [{"name"}]
-4. Store unique values with Sets
-5. Save memory with Generators
+
+### 4. Store unique values with Sets
+
+### 5. Save memory with Generators
 ```python
 
 connections = (conn for conn in some_list)
