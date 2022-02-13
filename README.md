@@ -134,3 +134,4 @@ words = filel_contents.split(' ')
 word_count = len(words)
 print(word_count)
 ```
+**not just for files, can be with databases or anything with managing resources and requiring some type of setup and shutdown.
