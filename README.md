@@ -287,3 +287,9 @@ python -m smtpd -c DebuggingServer -n localhost:1025
 
 
 10.) Help/Dir
+```python
+python
+>>>help # interactive help in python interpreter
+
+>>>help(http) # help on specific modules
+```
