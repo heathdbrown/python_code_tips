@@ -150,3 +150,22 @@ names = ['Bob', 'Doyle', 'Joe']
 for index, name in enumerate(names):
     print(index,name)
 ```
+5.) Zip
+Looping through two lists that correspond
+```python
+names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
+heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
+for index, name in enumerate(names):
+    hero = heroes[index]
+    print(f"{name} is actually {hero}")
+```
+
+Using zipin stead of enumerate
+```python
+names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
+heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
+for name, hero in zip(names, heroes):
+    print(f"{name} is actually {hero}")
+```
+
+6.) Unpacking
