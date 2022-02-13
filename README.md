@@ -73,10 +73,10 @@ print(sorted_data)
 connections = (conn for conn in some_list)
 ```
 
-6. Use collections.Counter to count things in objects
-7. Merge two dicts together using {**d1, **d2}
-8. Define default values in Dictionaries with .get() and .setdefault()
-9. Count hashable objects with collections.Counter
+### 6. Use collections.Counter to count things in objects
+### 7. Merge two dicts together using {**d1, **d2}
+### 8. Define default values in Dictionaries with .get() and .setdefault()
+### 9. Count hashable objects with collections.Counter
 https://docs.python.org/3/library/collections.html#collections.Counter
 
 ```python
@@ -88,8 +88,8 @@ for word in ['red', 'blue', 'red', 'green', 'blue', 'blue']:
 print(cnt)
 Counter({'blue': 3, 'red': 2, 'green': 1})
 ```
-8. Format strings with f-Strings (Python 3.6+)
-9. Concatenate strings with .join()
+### 8. Format strings with f-Strings (Python 3.6+)
+### 9. Concatenate strings with .join()
 ```python
 
 strings_to_join = ["Join", "this", "string"]
@@ -99,7 +99,7 @@ print(message)
 Join this string
 ```
 
-10. Merge dictionaries with {**d1, **d2} (Python 3.5+)
+### 10. Merge dictionaries with {**d1, **d2} (Python 3.5+)
 
 https://towardsdatascience.com/merge-dictionaries-in-python-d4e9ce137374
 
@@ -107,9 +107,9 @@ https://towardsdatascience.com/merge-dictionaries-in-python-d4e9ce137374
 
 ```
 
-11. Simplify if-statements with if x in list
+### 11. Simplify if-statements with if x in list
 
-## Random items
+### Random items
 
 Use vars() to enuermtae objects with properties into dictionaries
 
