@@ -204,7 +204,7 @@ a,b,*c,d = (1,2,3,4,5) #a,b set to first two values, d is set to last, c has the
 7.) Setattr/Getattr
 Initiall python uses dynmaic attributes
 ```python
-class Persion():
+class Person():
    pass
    
 person = Person()
@@ -215,11 +215,40 @@ person.last = "Doyle"
 ```
 Using setattr directly you can use variables
 ```python
-class Person()
+class Person():
    pass
 
 first_key = "first"
 first_val = "Bob"
 
 setattr(person, first_key, first_val)
+```
+
+Using setattr to set the person attributes
+```python
+class Person():
+   pass
+   
+person = Person()
+
+person_info = {'first': 'Corey', 'last': 'Schafer'}
+
+for key, value in person_info.items():
+    setattr(person, key, value)
+```
+Using getattr to retrive keys
+
+```python
+class Person():
+   pass
+   
+person = Person()
+
+person_info = {'first': 'Corey', 'last': 'Schafer'}
+
+for key, value in person_info.items():
+    setattr(person, key, value)
+
+for key in person_info.keys():
+    print(getattr(person, key))
 ```
