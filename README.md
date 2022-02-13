@@ -96,6 +96,7 @@ print(count)
 ### 7. Count hashable objects with collections.Counter
 https://docs.python.org/3/library/collections.html#collections.Counter
 
+Print the counts of all lists
 ```python
 from collections import Counter
 
@@ -105,6 +106,7 @@ counter = Counter(my_list)
 print(counter)
 ```
 
+Find the most common
 ```python
 from collections import Counter
 
@@ -113,6 +115,17 @@ counter = Counter(my_list)
 
 most_common = counter.most_common(1)
 print(most_common)
+```
+
+Find the least common
+```python
+from collections import Counter
+
+my_list = [10,10,10,5,5,2,9,9,9,9,9,9]
+counter = Counter(my_list)
+
+least_common = counter.most_common()[-1]
+print(least_common)
 ```
 
 ### 8. Format strings with f-Strings (Python 3.6+)
