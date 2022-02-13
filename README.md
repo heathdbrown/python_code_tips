@@ -160,7 +160,7 @@ for index, name in enumerate(names):
     print(f"{name} is actually {hero}")
 ```
 
-Using zipin stead of enumerate
+Using zip instead of enumerate
 ```python
 names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
 heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
@@ -169,3 +169,57 @@ for name, hero in zip(names, heroes):
 ```
 
 6.) Unpacking
+Zip actual returns a tuple and in the previous example we were unpacking
+```python
+# Packed example
+names = ['Peter Parker', 'Clark Kent', 'Wade Wilson', 'Bruce Wayne']
+heroes = ['Spiderman', 'Superman', 'Deadpool', 'Batman']
+for value in zip(names, heroes):
+    print(value)
+('Peter Parker, Spiderman)
+```
+Unpacking exmaple
+```python
+a, b = (1,2)
+print(a)
+print(b)
+```
+Unpacking but only using one value
+```python
+a, _ = (1, 2)
+print(a)
+```
+Unpack with more than exists
+```python
+a,b,c = (1,2) #ValueError not enough values to unpack (expected 3, got 2)
+a,b,c = (1,2,3,4,5) #ValueError too many values to unpack (expected 3)
+
+a, b, *c = (1 ,2, 3, 4, 5) # by putting an * in front of C c gets allthe other values
+
+a,b,*_ = (1,2,3,4,5) #ignores everything else after a,b
+
+a,b,*c,d = (1,2,3,4,5) #a,b set to first two values, d is set to last, c has the values in the middle
+```
+
+7.) Setattr/Getattr
+Initiall python uses dynmaic attributes
+```python
+class Persion():
+   pass
+   
+person = Person()
+
+# dynamic attributes in python
+person.first = "Bob"
+person.last = "Doyle"
+```
+Using setattr directly you can use variables
+```python
+class Person()
+   pass
+
+first_key = "first"
+first_val = "Bob"
+
+setattr(person, first_key, first_val)
+```
