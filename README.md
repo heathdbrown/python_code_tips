@@ -97,3 +97,8 @@ You can write this one oneline with Ternary Conditionals
 condition = True
 x = if condition else 0
 ```
+
+2.) Unerscore Placholers with large numbers
+```python
+num1 = 10_000_000_000
+```
