@@ -92,20 +92,29 @@ print(count)
 count = my_dict.setdefault("count", 0)
 print(count)
 ```
-### 7. Merge two dicts together using {**d1, **d2}
-### 8. 
-### 9. Count hashable objects with collections.Counter
+
+### 7. Count hashable objects with collections.Counter
 https://docs.python.org/3/library/collections.html#collections.Counter
 
 ```python
 from collections import Counter
 
-for word in ['red', 'blue', 'red', 'green', 'blue', 'blue']:
-   cnt[word] += 1
-   
-print(cnt)
-Counter({'blue': 3, 'red': 2, 'green': 1})
+my_list = [10,10,10,5,5,2,9,9,9,9,9,9]
+counter = Count(my_list)
+
+print(counter)
 ```
+
+```python
+from collections import Counter
+
+my_list = [10,10,10,5,5,2,9,9,9,9,9,9]
+counter = Count(my_list)
+
+most_common = counter.most_common(1)
+print(most_common)
+```
+
 ### 8. Format strings with f-Strings (Python 3.6+)
 ### 9. Concatenate strings with .join()
 ```python
