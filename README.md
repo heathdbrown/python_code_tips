@@ -5,14 +5,64 @@
 
 1. Iterate with enumerate instead or range(len(x))
 
-2. Use list comprehension instead of raw for loops
+Bad way
 ```python
+data = [1,2,-4,-3]
+for i in range(len(data)):
+   if data[i] <0 :
+      data[i] = 0
+      
+print(data)
+```
 
+Better way
+```python
+data = [1,2,-4,-3]
+for idx, num in enumerate(data):
+    if num < 0:
+       data[idx] = 0
+       
+print(data)
+```
+
+2. Use list comprehension instead of raw for loops
+
+Bad Way; if super short and is not readable
+```python
+squares = []
+for i in range(10):
+    squares.append(i*i)
+print(squares)
+```
+
+Better way; if super short and is not readable
+```python
+squares = [i*i for i in range(10)]
+print(squares)
+```
+
+List comprehension example
+```
 connections = [conn for conn in some_list]
 ```
 
 3. Sort complex iterables with sorted()
-
+Simple iterable sorting using list
+```python
+data = [3,5,1,10,9]
+sorted_data = sorted(data)
+print(sorted_data)
+```
+Complex iterable sorting using dict of list
+```python
+data = [ {"name": "max", "age" : 6},
+         {"name": "lisa", "age" :20},
+	 {"name": "ben", "age" :9}]
+	 
+sorted_data = sorted(data, key=lambda x: x["age"])
+print(sorted_data)
+```
+data = [{"name"}]
 4. Store unique values with Sets
 5. Save memory with Generators
 ```python
