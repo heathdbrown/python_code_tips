@@ -159,6 +159,14 @@ print(merged_dict)
 
 ### 11. Simplify if-statements with if x in list
 
+```python
+color = ["red", "green", "blue"]
+
+c = "red"
+if c in colors:
+   print(f"{c} is main color")
+```
+
 ### Random items
 
 Use vars() to enuermtae objects with properties into dictionaries
