@@ -151,7 +151,10 @@ Join this string
 https://towardsdatascience.com/merge-dictionaries-in-python-d4e9ce137374
 
 ```python
-
+d1 = {"name": "Alex", "age": 25}
+d2 = {"name": "Alex", "city": "New York"}
+merged_dict = {**d1, **d2}
+print(merged_dict)
 ```
 
 ### 11. Simplify if-statements with if x in list
