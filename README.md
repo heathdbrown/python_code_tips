@@ -129,6 +129,13 @@ print(least_common)
 ```
 
 ### 8. Format strings with f-Strings (Python 3.6+)
+
+```python
+name = "Bob"
+my_string = f"Hello {name}"
+print(my_strin)
+```
+
 ### 9. Concatenate strings with .join()
 ```python
 
